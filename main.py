@@ -22,3 +22,5 @@ from sklearn import datasets
 mpl.rcParams['figure.figsize'] = (15.0, 5.0)
 
 iris = datasets.load_iris()
+df = pd.DataFrame(iris.data, columns=iris.feature_names)
+df['y'] = iris.target
