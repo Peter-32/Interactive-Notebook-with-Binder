@@ -30,6 +30,10 @@ iris dataset
 - Data Explorer
 - Choose favorite plots
 - Create those plots in Seaborn
+  - 1 var: Joy  
+  - Colored pairplot or scatterplot
+  - parallel plot
+  - Time series plot for index 0:50, 50:100, 100:150 for the 4 feature values (3 plots, one axis per plot)
 - Download the dashboard plugin into commons (if not already there)
 - Git push
 - Upload to binder.com
