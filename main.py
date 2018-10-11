@@ -20,7 +20,28 @@ from sklearn.model_selection import KFold
 from sklearn.model_selection import cross_val_score
 from sklearn import datasets
 mpl.rcParams['figure.figsize'] = (15.0, 5.0)
+pd.options.display.html.table_schema = True
+pd.options.display.max_rows = None
 
 iris = datasets.load_iris()
 df = pd.DataFrame(iris.data, columns=iris.feature_names)
 df['y'] = iris.target
+df['y'] = df['y'].apply(lambda x: str(x))
+df
+
+
+# Heatmap
+cor_mat = df.corr().apply(lambda x: abs(x))
+sns.heatmap(cor_mat, vmax=.8, square=True)
+# Pairplot
+sns.pairplot(df, hue="y", palette="Set2", diag_kind="kde", size=2.5)
+
+
+
+
+from pandas.tools.plotting import parallel_coordinates
+parallel_coordinates(df, 'y', colormap=plt.get_cmap("Set2"))
+
+
+
+ax = sns.tsplot(data=df)
