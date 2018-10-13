@@ -41,7 +41,3 @@ sns.pairplot(df, hue="y", palette="Set2", diag_kind="kde", size=2.5)
 
 from pandas.tools.plotting import parallel_coordinates
 parallel_coordinates(df, 'y', colormap=plt.get_cmap("Set2"))
-
-
-
-ax = sns.tsplot(data=df)
