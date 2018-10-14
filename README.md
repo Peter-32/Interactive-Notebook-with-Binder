@@ -1,4 +1,8 @@
-# interactive_dashboard_poc
+# Interactive-Notebook-with-Binder
+
+### Blogpost
+
+[Data.in Model.out](http://data-in-model-out.com/interactive-notebook-with-binder/)
 
 ### Question
 
@@ -6,7 +10,7 @@ Is Binder a good option for an interactive dashboard?
 
 ### Hypothesis
 
-It works well to allow the public to access to your dashboard.  It also has privacy settings
+It works well to allow the public to access to your dashboard.  It also has privacy settings.
 
 ### Data Sources
 
@@ -33,12 +37,12 @@ iris dataset
   - X 1 var: Joy  
   - X Colored pairplot or scatterplot
   - X parallel plot
-  - Time series plot for index 0:50, 50:100, 100:150 for the 4 feature values (3 plots, one axis per plot)
-- Download the dashboard plugin into commons (if not already there)
-- Git push
-- Upload to binder.com
-- Upload the interactive dashboard as an iframe to blog and set as auto exploration category
+- X Git push
+- X Upload to binder.com
 
 ### Conclusion
 
-Nothing yet.
+- Pros: I could host Jupyter notebooks.
+- Cons: I was unable to install modules in Binder.  Also, I was unable to use Jupyter dashboard locally & on Binder.
+
+I will use Atom or DataBricks instead of Jupyter + Binder.  Binder doesn't have privacy settings and I couldn't figure out how to install Python modules in Binder.
